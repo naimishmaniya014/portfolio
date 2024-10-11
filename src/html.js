@@ -1,27 +1,7 @@
-// src/html.js
 import React from 'react';
 import PropTypes from 'prop-types';
 
-let stylesStr;
-if (process.env.NODE_ENV === `production`) {
-  try {
-    stylesStr = require(`!raw-loader!../public/styles.css`);
-  } catch (e) {
-    console.log(e);
-  }
-}
-
 const Html = ({ headComponents, body, postBodyComponents }) => {
-  let css;
-  if (process.env.NODE_ENV === `production`) {
-    css = (
-      <style
-        id="gatsby-inlined-css"
-        dangerouslySetInnerHTML={{ __html: stylesStr }}
-      />
-    );
-  }
-
   return (
     <html op="news" lang="en">
       <head>
@@ -33,7 +13,6 @@ const Html = ({ headComponents, body, postBodyComponents }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
         <title>Naimish's Portfolio</title>
-        {css}
       </head>
       <body>
         <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />

@@ -6,11 +6,7 @@ module.exports = {
     title: `Naimish-Maniya-portfolio`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
-}
-module.exports = {
   plugins: [
-    `gatsby-plugin-sass`,
-    // other plugins
+    `gatsby-plugin-sass`, // Add other plugins here if needed
   ],
 };

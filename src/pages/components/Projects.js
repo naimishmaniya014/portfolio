@@ -70,22 +70,27 @@ class ProjectCard extends React.PureComponent {
 
 class Projects extends React.PureComponent {
   render() {
-    const { projects } = this.props;
+    const { projects = [] } = this.props;  // Provide default empty array
     return (
       <div className="projects-container">
-        {projects.map((proj) => (
-          <ProjectCard
-            title={proj.title}
-            description={proj.description}
-            skills={proj.skills}
-            links={proj.links}
-            image={proj.image}
-            key={proj.title}
-          />
-        ))}
+        {projects.length > 0 ? (
+          projects.map((proj) => (
+            <ProjectCard
+              title={proj.title}
+              description={proj.description}
+              skills={proj.skills}
+              links={proj.links}
+              image={proj.image}
+              key={proj.title}
+            />
+          ))
+        ) : (
+          <p>No projects to display</p>  // Show a fallback message if no projects
+        )}
       </div>
     );
   }
 }
+
 
 export default Projects;

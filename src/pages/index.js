@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import ContactLinks from './components/ContactLinks';
 import Footer from './components/Footer';
 
-import projects from './content/projects';
+import projects from './content/projects.js';
 import statements from './content/about-me';
 
 export default class Home extends React.PureComponent {
