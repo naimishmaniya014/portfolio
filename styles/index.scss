@@ -20,7 +20,9 @@
 // }
 
 body {
-  background-color: #f6f9fc;
+  // background-color: #f6f9fc;
+  background: rgb(189,187,210);
+  background: linear-gradient(103deg, rgba(189,187,210,1) 0%, rgba(246,249,252,1) 58%);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'pnum';
@@ -84,4 +86,18 @@ a {
   margin: 0 auto;
   margin-top: 30px;
   width: 50px;
+}
+
+.vanta-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Ensure it covers the entire viewport */
+  z-index: -1; /* Keep it behind all other content */
+}
+
+.home-container {
+  position: relative;
+  z-index: 1; /* Bring content in front of the background */
 }

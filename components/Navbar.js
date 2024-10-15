@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 const Navbar = () => (
   <div className="navbar-container">
     <nav className="navbar">
-      <Link to="resume" smooth={true} duration={500}>Resume</Link>
+    <a href="https://bit.ly/Maniya_Naimish_Resume" target="_blank" rel="noopener noreferrer">Resume</a>
       <Link to="projects" smooth={true} duration={500}>Projects</Link>
       <Link to="contact" smooth={true} duration={500}>Contact</Link>
     </nav>

@@ -1,8 +1,8 @@
 export default [
-  {
-    input: 'Naimish.currentLocation',
-    return: '"Tempe, AZ, USA"',
-  },
+  // {
+  //   input: 'Naimish.currentLocation',
+  //   return: '"Tempe, AZ, USA"',
+  // },
   {
     input: 'Naimish.contactInfo',
     return:
