@@ -5,9 +5,11 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import ContactLinks from '../components/ContactLinks';
 import Footer from '../components/Footer';
+import Skills from '../components/skills';
 
 import projects from '../data/projects';
 import statements from '../data/about-me';
+import skillsdata from '../data/skillsinfo';
 
 export default class Home extends React.PureComponent {
   render() {
@@ -24,6 +26,11 @@ export default class Home extends React.PureComponent {
         </div>
 
         <div className="background" />
+
+        {/* Skills Section */}
+        <div id="skills">
+          <Skills />
+        </div>
 
         {/* Contact Me Section */}
         <div id="contact">  {/* Ensure consistency with react-scroll */}

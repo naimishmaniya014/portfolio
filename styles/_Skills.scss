@@ -1,0 +1,60 @@
+.skills-container {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .skills-tabs {
+    display: inline-flex; /* Ensures the tabs don't fill the entire screen width */
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 1px solid #747fe0;
+    border-radius: 13px; /* Round corners for the container */
+    padding: 5px; /* Padding inside the container to keep the tabs away from the edges */
+  }
+  
+  .skills-tab {
+    padding: 10px 80px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #747fe0;
+    border: none;
+    border-radius: 13px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .skills-tab:hover {
+    background-color: #747fe0; /* Purple background on hover */
+    color: white; /* White text on hover */
+  }
+  
+  .skills-tab.active {
+    background-color: #747fe0; /* Active tab background color */
+    color: white; /* Active tab text color */
+  }
+  
+  .skills-icons {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .skill-icon {
+    font-size: 4rem;
+    color: #747fe0;
+  }
+  
+  .skill p {
+    margin-top: 10px;
+    color: #747fe0;
+  }
+  
