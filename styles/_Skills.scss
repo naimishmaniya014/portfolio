@@ -1,60 +1,82 @@
 .skills-container {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.skills-tabs {
+  display: inline-flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 30px;
+  border: 1px solid #747fe0;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.skills-tab {
+  padding: 10px 20px;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #747fe0;
+  border: none;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.skills-tab.active {
+  background-color: #747fe0;
+  color: white;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;  /* Adjusted the gap */
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.skill-icon {
+  font-size: 4rem;
+  color: #747fe0;
+}
+
+.skill p {
+  margin-top: 10px;
+  color: #747fe0;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
   .skills-tabs {
-    display: inline-flex; /* Ensures the tabs don't fill the entire screen width */
-    justify-content: center;
-    margin-bottom: 30px;
-    border: 1px solid #747fe0;
-    border-radius: 13px; /* Round corners for the container */
-    padding: 5px; /* Padding inside the container to keep the tabs away from the edges */
+    display: flex;
+    flex-direction: column; /* Stack the skill tabs vertically */
+    gap: 10px; /* Reduce the gap for mobile */
   }
-  
-  .skills-tab {
-    padding: 10px 80px;
-    background: none;
-    cursor: pointer;
-    font-size: 16px;
-    color: #747fe0;
-    border: none;
-    border-radius: 13px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .skills-tab:hover {
-    background-color: #747fe0; /* Purple background on hover */
-    color: white; /* White text on hover */
-  }
-  
-  .skills-tab.active {
-    background-color: #747fe0; /* Active tab background color */
-    color: white; /* Active tab text color */
-  }
-  
+
   .skills-icons {
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Show 3 icons per row */
+    gap: 20px; /* Reduce the gap between icons */
   }
-  
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-  }
-  
+
   .skill-icon {
-    font-size: 4rem;
-    color: #747fe0;
+    font-size: 3rem; /* Reduce the size of the skill icons for mobile */
   }
-  
-  .skill p {
-    margin-top: 10px;
-    color: #747fe0;
+
+  .skills-tab {
+    padding: 8px 12px; /* Reduce the padding for the tabs */
+    font-size: 14px;   /* Reduce the font size for tabs */
   }
-  
+
+  .skills-container {
+    padding: 20px 10px; /* Reduce the padding on mobile */
+  }
+}
